@@ -1,0 +1,65 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": null,
+        "validations":null,
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+
+    {
+        "name": "consultation_id",
+        "dbType": "integer:unsigned:foreign,consultations,id",
+        "relation": "mt1,Consultation,consultation_id,id",
+        "htmlType": "selectTable:Consultation:name, id",
+        "validations": true,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "cas_infected_id",
+        "dbType": "integer:unsigned:default,0:foreign,cas_Infecteds,id",
+        "relation": "1tm,Cas_Infected,cas_infected_id,id",
+        "htmlType": "selectTable:Cas_Infected:name, id",
+        "validations": true,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+   
+    
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType":null,
+        "validations":null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": null,
+        "validations":null,
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

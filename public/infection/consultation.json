@@ -1,0 +1,63 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "observation",
+        "dbType": "string",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "date_consultation",
+        "dbType": "dateTime",
+        "htmlType": "date",
+        "searchable": true
+    },
+    
+    {
+        "name": "agent_id",
+        "dbType": "integer:unsigned:default,0:foreign,agents,id",
+        "htmlType": "integer",
+        "relation": "1tm,Comment"
+    },
+    {
+        "name": "cas_Infected_id",
+        "dbType": "integer:unsigned:default,0:foreign,cas_Infecteds,id",
+        "htmlType": "integer",
+        "relation": "1tm,Comment"
+    },
+    
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

@@ -1,0 +1,69 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "description",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "searchable": true
+    },
+
+    {
+        "name": "origine",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "searchable": true
+    },
+
+    {
+        "name": "cible",
+        "dbType": "text",
+        "htmlType": "text",
+        "searchable": true
+    },
+    {
+        "name": "mesure_de_riposte",
+        "dbType": "text",
+        "htmlType": "textarea",
+        "searchable": true
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]
