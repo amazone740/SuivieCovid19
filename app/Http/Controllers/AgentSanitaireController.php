@@ -9,6 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Models\User;
 
 class AgentSanitaireController extends AppBaseController
 {
@@ -30,6 +31,11 @@ class AgentSanitaireController extends AppBaseController
     public function index(Request $request)
     {
         $agentSanitaires = $this->agentSanitaireRepository->all();
+        foreach($agentSanitaires as $agentSanitaire){
+            $user = User::select('users.*')->Where('id', '=',$agentSanitaire->user_id)->first();
+            $agentSanitaire->user=$user;
+        }
+        
 
         return view('agent_sanitaires.index')
             ->with('agentSanitaires', $agentSanitaires);

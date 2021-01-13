@@ -1,3 +1,4 @@
+
 <div class="table-responsive">
     <table class="table" id="agentSanitaires-table">
         <thead>
@@ -13,7 +14,7 @@
         <tbody>
         @foreach($agentSanitaires as $agentSanitaire)
             <tr>
-                <td>{{ $agentSanitaire->user_id }}</td>
+                <td>{{$agentSanitaire->user->name }}</td>
             <td>{{ $agentSanitaire->cni_agent }}</td>
             <td>{{ $agentSanitaire->ville_residence }}</td>
             <td>{{ $agentSanitaire->centre_provenance }}</td>
