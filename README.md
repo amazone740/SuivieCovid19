@@ -14,6 +14,7 @@ Laravel Boilerplate with [PSCOVID19]
 ## Usage
 ### etapes à suivre
 1. Clone/Download a repo.
+ git clone https://github.com/amazone740/SuivieCovid19.git
 2. Copy `.env.example` en un fichier `.env` & qui constitura le fichier de configuration 
 3. Run `composer install`
 4. Generate application key by running `php artisan key:generate`

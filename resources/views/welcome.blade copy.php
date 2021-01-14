@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Covid19</title>
+<title>Landing Landing Page Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -66,29 +66,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="bar"></div>
           </div>
         </div>
-		
-
         <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
-		
-		    @if (Route::has('login'))
-               
-                    @auth
-					<li>
-		  				<a href="{{ url('/home') }}" class="btn w3ls-btn">Home</a>
-          			</li>
-                    @else
-					<li>
-		  				<a href="{{ route('login') }}" class="btn w3ls-btn">Login</a>
-         			</li>
-
-                        @if (Route::has('register'))
-							<li>
-		 	 					<a href="{{ route('register') }}" class="scroll">Register</a>
-          					</li>
-                        @endif
-                    @endauth
-                
-            @endif
+          <li>
+            <a href="index.html" class="active">home</a>
+          </li>
+          <li>
+            <a href="#choose" class="scroll">Why Choose Us</a>
+          </li>
+          <li>
+            <a href="#overview" class="scroll">Overview</a>
+          </li>
+          <li>
+            <a href="#pricing" class="scroll">Pricing</a>
+          </li>
+          <li>
+            <a href="#faq" class="scroll">Faq's</a>
+          </li>
           <li>
             <a href="#contact" class="scroll">Contact</a>
           </li>
@@ -512,6 +505,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- //faqs -->
 
+<!-- testimonials -->
+<section class="testimonials bg-light py-5" id="testimonials">
+	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Honorable Clients</h3>
+		<div class="row test-grids">
+			<div class="col-md-4 col-sm-7 col-9" data-aos="zoom-in">
+				<img src="images/b3.png" alt="" class="img-fluid" />
+			</div>
+			<div class="col-md-8">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider3">
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>john watson</h4>
+								<span class="">- congue leo</span>
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla
+									quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada feugiat.
+									Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit.
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>Paul walkner</h4>
+							   <span class="">- lacinia eget</span>
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Donec rutrum congue leo eget consectetur sed, convallis at tellus. Nulla quis
+									lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada feugiat. Donec
+									rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit
+								</p>
+							</div>
+						</li>
+						<li data-aos="fade-down">
+							<div class="testi-pos">
+								<h4>Anderson</h4>
+								<span class="">- Donec rutru</span>
+								<ul class="d-flex mt-2">
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas mr-1 fa-star"></i></li>
+									<li><i class="fas fa-star"></i></li>
+								</ul>
+							</div>
+							<div class="testi-agile">
+								<p>
+									<i class="fas fa-quote-left pr-3"></i>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla
+									quis lorem ut libero malesuada feugiat.Nulla quis lorem ut libero malesuada feugiat.
+									Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //testimonials -->
 
 <!-- contact -->
 <section class="contact py-5" id="contact">

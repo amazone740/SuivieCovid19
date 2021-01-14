@@ -25,7 +25,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('symptomes', App\Http\Controllers\SymptomeController::class);
 
 
-
-Route::resource('agents', App\Http\Controllers\AgentController::class);
-
 Route::resource('agentSanitaires', App\Http\Controllers\AgentSanitaireController::class);
+
+Route::resource('questionnaires', App\Http\Controllers\QuestionnaireController::class);
