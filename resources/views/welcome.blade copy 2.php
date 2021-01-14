@@ -1,40 +1,828 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+<title>Covid19</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Landing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
-        <title>PSCOVID19</title>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	
+	<!-- animation css files -->
+	<link rel="stylesheet" href="css/animation-aos.css">
+	<link href='css/aos.css' rel='stylesheet prefetch' type="text/css" media="all" />
+	<!-- //animation css files -->
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/fontawesome-all.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
 
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+<!-- header -->
+<header class="index-banner">
+    <!-- nav -->
+    <nav class="main-header">
+      <div id="brand" data-aos="zoom-in-up">
+        <div id="logo">
+          <a href="index.html">
+            <i class="fab fa-blackberry"></i>
+          </a>
+        </div>
+        <div id="word-mark">
+          <h1>
+            <a href="index.html">Landing</a>
+          </h1>
+        </div>
+      </div>
+      <div id="menu">
+        <div id="menu-toggle">
+          <div id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+		
+
+        <ul class="text-center text-capitalize nav-agile" data-aos="zoom-in-up">
+		
+		    @if (Route::has('login'))
+               
                     @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+					<li>
+		  				<a href="{{ url('/home') }}" class="btn w3ls-btn">Home</a>
+          			</li>
                     @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+					<li>
+		  				<a href="{{ route('login') }}" class="btn w3ls-btn">Login</a>
+         			</li>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+							<li>
+		 	 					<a href="{{ route('register') }}" class="scroll">Register</a>
+          					</li>
                         @endif
                     @endauth
-                </div>
+                
             @endif
-        </div>
+          <li>
+            <a href="#contact" class="scroll">Contact</a>
+          </li>
+          <li>
+            <button type="button" class="btn w3ls-btn" data-toggle="modal" aria-pressed="false" data-target="#exampleModalCenter2">
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- //nav -->
+	<!-- banner -->
+	<div class="banner layer" id="home">
+		<div class="container">
+			<div class="row banner-text">
+				<div class="slider-info col-lg-8">
+					<div class="agileinfo-logo mt-5">
+						<h2 data-aos="fade-down">
+							<span class="fab fa-blackberry text-center"></span> Modern Solution -
+						</h2>
+					</div>
+					<h3 class="txt-w3_agile" data-aos="fade-down">Professional Landing Page </h3>
+					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">read more</a>
+					<a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">watch video <i class="fas fa-play-circle"></i></a>
+				</div>
+				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
+					<h5><i class="fas mr-2 fa-laptop"></i> Register Now</h5>
+					<form action="#" class="mt-4" method="post">
+						<input class="form-control" type="text" name="Name" placeholder="Name" required="" />
+						<input class="form-control" type="email" name="Email" placeholder="Email" required="" />
+						<input class="form-control" type="text" name="Number" placeholder="Phone Number" required="" />
+						<input class="form-control" type="password" name="Number" placeholder="Password" required="" />
+						<input class="form-control text-capitalize" type="submit" value="Register Account">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+</header>
+<!-- //header -->
+
+<!-- banner bottom -->
+<section class="banner-bottom py-5">
+	<div class="container py-md-3">
+		<h4 class="text-center" data-aos="zoom-in">Trusted by the world's best companies</h4>
+		<ul class="list-unstyled pt-5 partners-icon text-center">
+			<li data-aos="fade-up">
+				<i class="fab fa-supple clr1"></i>
+			</li>
+			<li data-aos="fade-up">
+				<i class="fab fa-aviato clr2"></i>
+			</li>
+			<li data-aos="fade-up">
+				<i class="fab fa-cpanel clr3"></i>
+			</li>
+			<li data-aos="fade-up">
+				<i class="fab fa-hooli clr4"></i>
+			</li>
+			<li data-aos="fade-up">
+				<i class="fab fa-supple clr5"></i>
+			</li>
+			<li data-aos="fade-up">
+				<i class="fab fa-aviato clr6"></i>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- //banner bottom -->
+
+<!-- why choose us -->
+<section class="choose py-5" id="choose">
+	<div class="container py-md-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Why Choose Us</h3>
+		<div class="feature-grids row">
+			<div class="col-lg-4 col-md-6" data-aos="fade-right">
+				<div class="f1 icon1 p-4">
+					<i class="fab fa-bandcamp"></i>
+					<h3 class="my-3">Design & Branding</h3>
+					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6" data-aos="fade-up">
+				<div class="f1 icon2 p-4">
+					<i class="fab fa-codepen"></i>
+					<h3 class="my-3">Safe & Secure</h3>
+					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
+				<div class="f1 icon3 p-4">
+					<i class="fab fa-bitcoin"></i>
+					<h3 class="my-3">Fresh Interfaces</h3>
+					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //why choose us -->
+
+<!-- quote -->
+<section class="quote bg-light py-5">
+	<div class="container py-md-3" data-aos="fade-up">
+		<h4>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper.</h4>
+		<div class="start text-right mt-4" data-aos="flip-left">
+			<a href="#contact" class="scroll">Get Started </a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- //quote -->
+
+<!-- process -->
+<section class="process py-5" id="overview">
+	<div class="container py-md-5">
+		<div class="row process-grids">
+			<div class="col-lg-6" data-aos="fade-right">
+				<h4 class="mb-4">Excepteur sint occaecat non lorem proident, sunt in culpa quis.</h4>
+				<p class="mb-3">Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
+				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur. Nullam luctus hendrerit sapien, sed dictum est.
+				mattis egestas.</p>
+				<p>Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
+				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+			</div>
+			<div class="col-md-6" data-aos="fade-left">
+				<img src="images/b1.jpg" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-md-6 px-5 mt-5" data-aos="fade-right">
+				<img src="images/b2.jpg" alt="" class="img-fluid"/>
+			</div>
+			<div class="col-lg-6 mt-5" data-aos="fade-left">
+				<h4 class="mb-4">Excepteur sint occaecat non lorem proident, sunt in culpa quis.</h4>
+				<p class="mb-3">Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
+				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur. Nullam luctus hendrerit sapien, sed dictum est.
+				mattis egestas.</p>
+				<p>Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
+				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //process -->
+
+<!--/pricing -->
+<section class="pricing bg-light py-5" id="pricing">
+	<div class="container py-lg-3">
+		<div class="inner-sec">
+			<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Pricing plans</h3>
+			<div class="price-right">
+				<div class="tabs">
+					<ul class="nav nav-pills my-md-5 my-3 justify-content-center" id="pills-tab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Weekly</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Monthly</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+							<div class="menu-grids">
+								<div class="row t-in">
+									<div class="col-lg-3 col-sm-6 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Basic</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class=""></span>Free
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-md-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Satandard</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>30<span>/mon</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Business</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>90<span>/mon</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Basic</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>120<span>/mon</span>
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+							<div class="menu-grids mt-4">
+								<div class="row t-in">
+									<div class="col-lg-3 col-sm-6 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Standard</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>60
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-md-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Business</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>80
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Business</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>90
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-sm-6 mt-lg-0 mt-5 price-main-info" data-aos="zoom-in-up">
+										<div class="price-inner card box-shadow p-4">
+
+											<div class="card-body">
+												<h4 class="">Advance</h4>
+												<h5 class="card-title pricing-card-title">
+													<span class="">$</span>90
+
+												</h5>
+												<ul class="list-unstyled mt-3 mb-4">
+													<li>100 MB Disk Space</li>
+													<li>2 Sub domains</li>
+													<li>5 Email Accounts</li>
+													<li>24/7 support</li>
+												</ul>
+												<div class="log-in mt-md-3 mt-2">
+													<a class="btn scroll" href="#contact">Select</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //pricing -->
+
+<!-- faqs -->
+<section class="faq-w3l py-5" id="faq">
+	<div class="container py-lg-3">
+	<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Frequently Asked Questions</h3>
+		<div class="row faq-info">
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item1 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item2 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item3 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class=" col-md-6 faq-w3agile">
+				<ul class="faq pl-sm-4 pl-3">
+					<li class="item5 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item6 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item7 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
+						<h4>Lorem ipsum dolor sit amet? </h4>
+						<ul>
+							<li class="subitem1 mt-3">
+								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+									laoreet dolore.</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //faqs -->
 
 
+<!-- contact -->
+<section class="contact py-5" id="contact">
+	<div class="container py-lg-3">
+		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Porter Une Note</h3>
+		<form action="#" method="post" data-aos="fade-up">
+			<div class="row">
+				<div class="col-md-6 styled-input mt-0">
+					<input type="text" name="Name" placeholder="First Name" required="">
+				</div>
+				<div class="col-md-6 styled-input mt-md-0">
+					<input type="text" name="Name" placeholder="Last Name" required="">
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-md-6 styled-input">
+					<input type="email" name="Email" placeholder="Email" required=""> 
+				</div>
+				<div class="col-md-6 styled-input">
+					<input type="text" name="phone" placeholder="Phone Number" required="">
+				</div> 
+			</div>
+			<div class="styled-input">
+				<textarea  name="Message" placeholder="Entrer le contenu de votre Message Ici merci de nous faire confiance dans le suivi du covid19 !!!" required=""></textarea>
+			</div>
+			<div class="click text-center mt-3">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</section>
+<!-- //contact -->
+
+<!--footer -->
+<footer>
+<section class="footer footer_w3layouts_section_1its py-5">
+	<div class="container py-md-4">
+	<div class="footer-grid_section text-center" data-aos="zoom-in">
+				<div class="footer-title mb-3">
+					<a href="#"><i class="fab fa-blackberry mr-2"></i> Landing</a>
+				</div>
+				<div class="footer-text">
+					<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ipnut libero malesuada feugiat.
+					 Lorem ipsum dolor sit amet, consectetur elit.</p>
+				</div>
+				<ul class="social_section_1info">
+					<li class="mb-2 facebook"><a href="#"><i class="fab mr-1 fa-facebook-f"></i>facebook</a></li>
+					<li class="mb-2 twitter"><a href="#"><i class="fab mr-1 fa-twitter"></i>twitter</a></li>
+					<li class="google"><a href="#"><i class="fab mr-1 fa-google-plus-g"></i>google</a></li>
+					<li class="linkedin"><a href="#"><i class="fab mr-1 fa-linkedin-in"></i>linkedin</a></li>
+				</ul>
+			</div>
+			
+		<div class="row footer-top mt-md-5 mt-4">
+			<div class="col-lg-4 col-md-6 footer-grid_section_1its_w3" data-aos="fade-right">
+				<div class="footer-title">
+					<h3>Address</h3>
+				</div>
+				<div class="footer-text">
+					<p>Address : 1234 lock, Charlotte, North Carolina, United States</p>
+					<p>Phone : +12 534894364</p>
+					<p>Email : <a href="mailto:info@example.com">info@example.com</a></p>
+					<p>Fax : +12 534894364</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-md-0 mt-4 footer-grid_section_1its_w3" data-aos="fade-up">
+				<div class="footer-title">
+					<h3>Quick Links</h3>
+				</div>
+				<div class="row">
+					<ul class="col-6 links">
+						<li><a href="#choose" class="scroll">Why Choose Us </a></li>
+						<li><a href="#overview" class="scroll">Overview </a></li>
+						<li><a href="#pricing" class="scroll">Pricing Plans</a></li>
+						<li><a href="#faq" class="scroll">Faq's </a></li>
+						<li><a href="#testimonials" class="scroll">Testimonial </a></li>
+						<li><a href="#contact" class="scroll">Contact </a></li>
+					</ul>
+					<ul class="col-6 links">
+						<li><a href="#">Privacy Policy </a></li>
+						<li><a href="#">General Terms </a></li>
+						<li><a href="#faq" class="scroll">Faq's </a></li>
+						<li><a href="#">Knowledge </a></li>
+						<li><a href="#">Forum </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 mt-lg-0 mt-4 col-sm-12 footer-grid_section_1its_w3" data-aos="fade-left">
+				<div class="footer-title">
+					<h3>Newsletter</h3>
+				</div>
+				<div class="footer-text">
+					<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+					<form action="#" method="post">
+						<input type="email" name="Email" placeholder="Enter your email..." required="">
+						<button class="btn1"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+						<div class="clearfix"> </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="cpy-right text-center py-3">
+	<p class="">© 2021 Tout Droit reserve | Design by tsagueamazonegildas@gmail.com
+	</p>
+</div>
+<!-- //copyright -->
+
+<!-- Vertically centered Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title text-capitalize text-center" id="exampleModalLongTitle"> <i class="fab fa-blackberry"></i> Landing</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<img src="images/banner.jpg" class="img-fluid mb-3" alt="Modal Image" />
+				Vivamus eget est in odio tempor interdum. Mauris maximus fermentum arcu, ac finibus ante. Sed mattis risus at ipsum elementum,
+				ut auctor turpis cursus. Sed sed odio pharetra, aliquet velit cursus, vehicula enim. Mauris porta aliquet magna, eget laoreet ligula.
+				Sed mattis risus at ipsum elementum, ut auctor turpis cursus. Sed sed odio pharetra, aliquet.
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Save Changes</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //Vertically centered Modal -->
+	
+<!-- video Modal Popup -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Video Overview</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body video">
+				<iframe src="https://player.vimeo.com/video/43982091"></iframe>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Save Changes</button>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //video Model Popup -->
+
+<!--/Login-->
+<div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header text-center">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="login px-4 mx-auto mw-100">
+					<h5 class="text-center mb-4">Login Now</h5>
+					<form action="#" method="post">
+						<div class="form-group">
+							<label class="mb-2">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label class="mb-2">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+						</div>
+						<div class="form-check mb-2">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button type="submit" class="btn btn-primary submit mt-2">Sign In</button>
+						<p class="text-center pb-4">
+							<a href="#" data-toggle="modal2" data-target="#exampleModalCenter"> Don't have an account?</a>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--//Login-->
+
+    <!-- js -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- //js -->
+	
+	<!-- animation js -->
+	<script src='js/aos.js'></script>
+	<script>
+		AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+
+    </script>
+	<!-- //animation js -->
+
+	<!-- testimonials  Responsiveslides -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //testimonials  Responsiveslides -->
+
+	<!-- sticky nav bar-->
+	<script>
+		$(() => {
+
+		  //On Scroll Functionality
+		  $(window).scroll(() => {
+			var windowTop = $(window).scrollTop();
+			windowTop > 100 ? $('nav').addClass('navShadow') : $('nav').removeClass('navShadow');
+			windowTop > 100 ? $('ul.nav-agile').css('top', '50px') : $('ul.nav-agile').css('top', '160px');
+		  });
+
+		  //Click Logo To Scroll To Top
+		  $('#logo').on('click', () => {
+			$('html,body').animate({
+			  scrollTop: 0
+			}, 500);
+		  });
+
+		 /*
+		  //Smooth Scrolling Using Navigation Menu
+		  $('a[href*="#"]').on('click', function (e) {
+			$('html,body').animate({
+			  scrollTop: $($(this).attr('href')).offset().top - 100
+			}, 500);
+			e.preventDefault();
+		  });
+		 */
+
+		  //Toggle Menu
+		  $('#menu-toggle').on('click', () => {
+			$('#menu-toggle').toggleClass('closeMenu');
+			$('ul').toggleClass('showMenu');
+
+			$('li').on('click', () => {
+			  $('ul').removeClass('showMenu');
+			  $('#menu-toggle').removeClass('closeMenu');
+			});
+		  });
+
+		});
+	</script>
+	<!-- //sticky nav bar -->
+
+	<script src="js/smoothscroll.js"></script><!-- Smooth scrolling -->
+
+    <!-- start-smoth-scrolling -->
+    <script src="js/move-top.js"></script>
+    <script src="js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            /*
+			var defaults = {
+				  containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			 };
+			*/
+
+
+        });
+    </script>
+    <!-- //end-smoth-scrolling -->
+
+</body>
+</html>
