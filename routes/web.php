@@ -28,3 +28,5 @@ Route::resource('symptomes', App\Http\Controllers\SymptomeController::class);
 Route::resource('agentSanitaires', App\Http\Controllers\AgentSanitaireController::class);
 
 Route::resource('questionnaires', App\Http\Controllers\QuestionnaireController::class);
+
+Route::resource('patients', App\Http\Controllers\PatientController::class);
