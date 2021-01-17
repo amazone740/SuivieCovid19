@@ -31,7 +31,7 @@ class QuestionnaireController extends AppBaseController
     {
         $questionnaires = $this->questionnaireRepository->all();
 
-        return view('questionnaires.index')
+        return view('patients.questionnaire')
             ->with('questionnaires', $questionnaires);
     }
 

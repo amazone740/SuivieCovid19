@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('patients/questionnaire', [App\Http\Controllers\PatientController::class, 'create'])->name('questionnaire');
+
 
 Route::resource('symptomes', App\Http\Controllers\SymptomeController::class);
 
