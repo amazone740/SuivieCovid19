@@ -1,13 +1,18 @@
 <?php
-
-
+use App\Http\Requests\CreatePatientRequest;
+use App\Http\Requests\UpdatePatientRequest;
+use App\Repositories\PatientRepository;
+use App\Http\Controllers\AppBaseController;
+use Illuminate\Http\Request;
+use Flash;
+use Response;
 namespace App\Http\Controllers;
 use App\Models\Patient;
 use App\Models\User;
 
 use Illuminate\Http\Request;
 
-class PatientController extends AppBaseController
+class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,7 +34,7 @@ class PatientController extends AppBaseController
      */
     public function create()
     {
-        return view('patients/create');
+        return view('patients.create');
     }
 
     /**
@@ -39,36 +44,26 @@ class PatientController extends AppBaseController
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
-        
+    {
         $request->validate([
             'name'=>'required',
             'prenom'=>'required',
             'VilleResidence'=>'required',
             'telephone'=>'required',
-            'email'=>'required|email',
+            'name'=>'required',
             'password'=>'required',
             'dateNais'=>'required'
         ]);
-       
 
-       Patient::create([
-        'name'=>$request->name,
-        'prenom'=>$request->prenom,
-        'VilleResidence'=>$request->VilleResidence,
-        'telephone'=>$request->telephone,
-        'email'=>$request->email,
-        'dateNais'=>$request->dateNais,   
-        'password' => bcrypt($request->password)] );
-     
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => bcrypt($request->password),
-        ]);
+        Patient::create($request->all());
         
+        User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password']),
+        ]);
 
-        return back()
+        return redirect()->route('index')
         ->with('success','votre compte Patient est crée avec succes Veillez vous connecter pour contuer ');
     }
 
@@ -78,8 +73,6 @@ class PatientController extends AppBaseController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-
-
     public function show(Patient $patient)
     {
         return view('patients.show',compact('patient'));
@@ -105,14 +98,12 @@ class PatientController extends AppBaseController
      */
     public function update(Request $request, Patient $patient)
     {
-      
-
         $request->validate([
 
         ]);
         $patient->update($request->all());
         return redirect()->route('patients.index')
-        ->with('success','Compte Patient mise à jour successfully');
+        ->with('success','Compte Patient  successfully');
     }
 
     /**

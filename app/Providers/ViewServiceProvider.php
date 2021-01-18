@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Providers;
+use App\Models\AgentSanitaire;
+use App\Models\Stature;
+use App\Models\Patient;
 use App\Models\Symptome;
 use App\Models\Agent;
 use App\Models\Consultation;
@@ -28,6 +31,162 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        View::composer(['casinfecters.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name','id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['casinfecters.fields'], function ($view) {
+            $statureItems = Stature::pluck('name','id')->toArray();
+            $view->with('statureItems', $statureItems);
+        });
+        View::composer(['casinfecters.fields'], function ($view) {
+            $patientItems = Patient::pluck('name','id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecters.fields'], function ($view) {
+            $agent_sanitaireItems = AgentSanitaire::pluck('name',' id')->toArray();
+            $view->with('agent_sanitaireItems', $agent_sanitaireItems);
+        });
+        View::composer(['infecters.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecters.fields'], function ($view) {
+            $statureItems = Stature::pluck('name','id')->toArray();
+            $view->with('statureItems', $statureItems);
+        });
+        View::composer(['infecters.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infecteds.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
+        View::composer(['infected_cas.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infected_cas.fields'], function ($view) {
+            $agentItems = Agent::pluck('name',' id')->toArray();
+            $view->with('agentItems', $agentItems);
+        });
+        View::composer(['infected_cas.fields'], function ($view) {
+            $symptomeItems = Symptome::pluck('name',' id')->toArray();
+            $view->with('symptomeItems', $symptomeItems);
+        });
+        View::composer(['infected_cas.fields'], function ($view) {
+            $patientItems = Patient::pluck('name',' id')->toArray();
+            $view->with('patientItems', $patientItems);
+        });
         View::composer(['cas_infectedds.fields'], function ($view) {
             $symptomeItems = Symptome::pluck('name',' id')->toArray();
             $view->with('symptomeItems', $symptomeItems);

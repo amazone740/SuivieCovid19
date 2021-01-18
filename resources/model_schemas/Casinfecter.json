@@ -2,8 +2,8 @@
     {
         "name": "id",
         "dbType": "increments",
-        "htmlType": null,
-        "validations":null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": true,
@@ -12,24 +12,10 @@
         "inView": false
     },
     {
-        "name": "user_id",
-        "dbType": "integer:unsigned:foreign,users,id",
-        "htmlType": "selectTable:users:name, id",
-        "relation": "mt1,User,user_id,id",
-        "validations":"required",
-        "searchable": true,
-        "fillable": true,
-        "primary": false,
-        "inForm": true,
-        "inIndex": true,
-        "inView": true
-        
-    },
-    {
-        "name": "status",
-        "dbType": "enum:Traitement,Mort,Oservation",
-        "htmlType": "select:Traitement,Mort,Oservation",
-        "validations":"required",
+        "name": "patient_id",
+        "dbType": "integer:unsigned:foreign,patients,id",
+        "htmlType": "selectTable:patients:name,id",
+        "validations": "required",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -37,13 +23,11 @@
         "inIndex": true,
         "inView": true
     },
-    
     {
-        "name": "agent_id",
-        "dbType": "integer:unsigned:foreign,agents,id",
-        "htmlType": "selectTable:agents:name, id",
-        "relation": "mt1,Agent,agent_id,id",
-        "validations":"required",
+        "name": "statut_id",
+        "dbType": "integer:unsigned:foreign,statures,id",
+        "htmlType": "selectTable:statures:name,id",
+        "validations": "required",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -54,9 +38,8 @@
     {
         "name": "symptome_id",
         "dbType": "integer:unsigned:foreign,symptomes,id",
-        "htmlType": "selectTable:symptomes:name, id",
-        "relation": "mt1,Symptome,symptome_id,id",
-        "validations":"required",
+        "htmlType": "selectTable:symptomes:name,id",
+        "validations": "required",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -64,27 +47,40 @@
         "inIndex": true,
         "inView": true
     },
-
     {
         "name": "created_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,
         "inForm": false,
-        "inIndex": false
+        "inIndex": false,
+        "inView": true
     },
     {
         "name": "updated_at",
         "dbType": "timestamp",
-        "htmlType": null,
-        "validations": null,
+        "htmlType": "",
+        "validations": "",
         "searchable": false,
         "fillable": false,
         "primary": false,
         "inForm": false,
-        "inIndex": false
+        "inIndex": false,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Patient,patient_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Stature,statut_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Symptome,symptome_id,id"
     }
 ]
