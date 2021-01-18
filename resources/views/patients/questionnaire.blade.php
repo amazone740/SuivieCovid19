@@ -105,134 +105,55 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner layer" id="home">
 		<div class="container">
 			<div class="row banner-text">
-				<div class="slider-info col-lg-8">
+				<div class="slider-info col-lg-5">
 					<div class="agileinfo-logo mt-5">
 						<h2 data-aos="fade-down">
-							<span class="fab fa-blackberry text-center"></span> Modern Solution -
-						</h2>
+							<span class="fab fa-blackberry text-center"></span> FORMULAIRE DE CONSULTATION
+	   					</h2>
 					</div>
-					<h3 class="txt-w3_agile" data-aos="fade-down">Professional Landing Page </h3>
-					<a class="btn mt-4 mr-2 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModalCenter1" role="button">read more</a>
-					<a class="btn mt-4 text-capitalize" data-aos="fade-up" href="#" data-toggle="modal" data-target="#exampleModal" role="button">watch video <i class="fas fa-play-circle"></i></a>
+					
 				</div>
-				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
-					<h5><i class="fas mr-2 fa-laptop"></i> Register Now</h5>
-					<form action="#" class="mt-4" method="post">
-						<input class="form-control" type="text" name="Name" placeholder="Name" required="" />
-						<input class="form-control" type="email" name="Email" placeholder="Email" required="" />
-						<input class="form-control" type="text" name="Number" placeholder="Phone Number" required="" />
-						<input class="form-control" type="password" name="Number" placeholder="Password" required="" />
-						<input class="form-control text-capitalize" type="submit" value="Register Account">
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- //banner -->
+				<div class="col-lg-7 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left" >
+					<form action="questionnaire" class="mt-4" method="post">
+        <?php
+		$i=0;
+		?>
+        @foreach($questionnaires as $questionnaire)
+		<?php $i=$i+1; ?>
+        <div class="col-xs-12 col-sm-12 col-md-12" style="color: white">
+           <div class="col-xs-12 col-sm-12 col-md-12">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+			    <span>{{$i}} :</span>
+                <h4 style="display : inline">{{$questionnaire->intituler}} </h4>   
+			  </div>  
+              <div class="col-xs-6 col-sm-6 col-md-6" style="display : inline-block">
+			    <input  class="form-control" type="radio" id="reponsev{{$i}}"  name="reponse{{$i}}" class="form-control" placeholder=" prenom"><label for="reponse{{$i}}"> Oui </label>
+              </div>
+			  <div class="col-xs-6 col-sm-6 col-md-6" style="display : inline-block">
+			    <input  class="form-control"  type="radio" id="reponsef{{$i}} " name="reponse{{$i}}" class="form-control" placeholder=" prenom"><label for="reponsef{{$i}}">Non </label>
+              </div>
+		   </div>
+    </div>
+    @endforeach
+	</br>
+    <div class="col-xs-12 col-md-12 text-center">
+            <button class="form-control text-capitalize" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 </header>
 <!-- //header -->
 
 <!-- banner bottom -->
-<section class="banner-bottom py-5">
-	<div class="container py-md-3">
-		<h4 class="text-center" data-aos="zoom-in">Trusted by the world's best companies</h4>
-		<ul class="list-unstyled pt-5 partners-icon text-center">
-			<li data-aos="fade-up">
-				<i class="fab fa-supple clr1"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-aviato clr2"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-cpanel clr3"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-hooli clr4"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-supple clr5"></i>
-			</li>
-			<li data-aos="fade-up">
-				<i class="fab fa-aviato clr6"></i>
-			</li>
-		</ul>
-	</div>
-</section>
-<!-- //banner bottom -->
-
-<!-- why choose us -->
-<section class="choose py-5" id="choose">
-	<div class="container py-md-3">
-		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Why Choose Us</h3>
-		<div class="feature-grids row">
-			<div class="col-lg-4 col-md-6" data-aos="fade-right">
-				<div class="f1 icon1 p-4">
-					<i class="fab fa-bandcamp"></i>
-					<h3 class="my-3">Design & Branding</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6" data-aos="fade-up">
-				<div class="f1 icon2 p-4">
-					<i class="fab fa-codepen"></i>
-					<h3 class="my-3">Safe & Secure</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 mt-lg-0 mt-4" data-aos="fade-left">
-				<div class="f1 icon3 p-4">
-					<i class="fab fa-bitcoin"></i>
-					<h3 class="my-3">Fresh Interfaces</h3>
-					<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //why choose us -->
-
-<!-- quote -->
-<section class="quote bg-light py-5">
-	<div class="container py-md-3" data-aos="fade-up">
-		<h4>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper.</h4>
-		<div class="start text-right mt-4" data-aos="flip-left">
-			<a href="#contact" class="scroll">Get Started </a>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</section>
-<!-- //quote -->
 
 <!-- process -->
-<section class="process py-5" id="overview">
-	<div class="container py-md-5">
-		<div class="row process-grids">
-			<div class="col-lg-6" data-aos="fade-right">
-				<h4 class="mb-4">Excepteur sint occaecat non lorem proident, sunt in culpa quis.</h4>
-				<p class="mb-3">Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
-				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur. Nullam luctus hendrerit sapien, sed dictum est.
-				mattis egestas.</p>
-				<p>Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
-				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-			</div>
-			<div class="col-md-6" data-aos="fade-left">
-				<img src="images/b1.jpg" alt="" class="img-fluid"/>
-			</div>
-			<div class="col-md-6 px-5 mt-5" data-aos="fade-right">
-				<img src="images/b2.jpg" alt="" class="img-fluid"/>
-			</div>
-			<div class="col-lg-6 mt-5" data-aos="fade-left">
-				<h4 class="mb-4">Excepteur sint occaecat non lorem proident, sunt in culpa quis.</h4>
-				<p class="mb-3">Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
-				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur. Nullam luctus hendrerit sapien, sed dictum est.
-				mattis egestas.</p>
-				<p>Morbi tincidunt nisi tortor, iaculis maximus eros vestibulum at. Ut pulvinar tortor non augue fringilla, fermentum consequat
-				nisi rutrum. Orci varius natoque penatibus et magnis dis parturient montes.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //process -->
 
 <!--/pricing -->
 <section class="pricing bg-light py-5" id="pricing">
@@ -441,113 +362,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //pricing -->
 
 <!-- faqs -->
-<section class="faq-w3l py-5" id="faq">
-	<div class="container py-lg-3">
-	<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Frequently Asked Questions</h3>
-		<div class="row faq-info">
-			<div class=" col-md-6 faq-w3agile">
-				<ul class="faq pl-sm-4 pl-3">
-					<li class="item1 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item2 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item3 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-left">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class=" col-md-6 faq-w3agile">
-				<ul class="faq pl-sm-4 pl-3">
-					<li class="item5 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item6 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-					<li class="item7 item mt-sm-4 mt-3 pt-3 pl-2" data-aos="flip-right">
-						<h4>Lorem ipsum dolor sit amet? </h4>
-						<ul>
-							<li class="subitem1 mt-3">
-								<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-									laoreet dolore.</p>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //faqs -->
-
-
-<!-- contact -->
-<section class="contact py-5" id="contact">
-	<div class="container py-lg-3">
-		<h3 class="heading mb-5 text-center" data-aos="zoom-in"> Porter Une Note</h3>
-<<<<<<< HEAD
-		<form action="#" method="post" data-aos="fade-up">
-=======
-		<form action="{{Auth::routes()}}" method="post" data-aos="fade-up">
->>>>>>> 8d6d2d35f63100a867344274af0982b18872ef3a
-			<div class="row">
-				<div class="col-md-6 styled-input mt-0">
-					<input type="text" name="Name" placeholder="First Name" required="">
-				</div>
-				<div class="col-md-6 styled-input mt-md-0">
-					<input type="text" name="Name" placeholder="Last Name" required="">
-				</div> 
-			</div>
-			<div class="row">
-				<div class="col-md-6 styled-input">
-					<input type="email" name="Email" placeholder="Email" required=""> 
-				</div>
-				<div class="col-md-6 styled-input">
-					<input type="text" name="phone" placeholder="Phone Number" required="">
-				</div> 
-			</div>
-			<div class="styled-input">
-				<textarea  name="Message" placeholder="Entrer le contenu de votre Message Ici merci de nous faire confiance dans le suivi du covid19 !!!" required=""></textarea>
-			</div>
-			<div class="click text-center mt-3">
-				<input type="submit" value="Submit">
-			</div>
-		</form>
-	</div>
-</section>
-<!-- //contact -->
 
 <!--footer -->
 <footer>

@@ -116,6 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-lg-4 col-md-8 mt-lg-0 mt-5 banner-form" data-aos="fade-left">
 					<h5><i class="fas mr-2 fa-laptop"></i> Register Now</h5>
+<<<<<<< HEAD
 					<form method="POST" action="{{ route('patient') }}" class="mt-4">
     
                     @csrf
@@ -175,6 +176,67 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
 
                 </form>
+=======
+					<form action="#" class="mt-4" method="post">
+    
+    
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Nom du Patient : </strong>
+                <input type="text" name="name" class="form-control" placeholder="Nom du patient"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Prenom du Patient: </strong>
+                <input class="form-control" type="text" name="prenom" class="form-control" placeholder=" prenom"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong> Ville de Residence: </strong>
+                <input class="form-control" type="text" name="Ville_Residence" class="form-control" placeholder="ville de residence"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong> Telephone: </strong>
+                <input class="form-control" type="text" name="telephone" class="form-control" placeholder="numero de telephone"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Date de naissance: </strong>
+                <input class="form-control" type="text" name="dateNais" class="form-control" placeholder="votre dete de naissance ici"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Email: </strong>
+                <input class="form-control" type="text" name="email" class="form-control" placeholder="votre email ici"> 
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Mot de passe: </strong>
+                <input class="form-control" type="text" name="password" class="form-control" placeholder="votre mot de passe ici"> 
+            </div>
+        </div>
+
+
+        <div class="col-xs-12 col-md-12 text-center">
+            <button class="form-control text-capitalize" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+    </form>
+>>>>>>> 8d6d2d35f63100a867344274af0982b18872ef3a
 
                 </div>
             </div>
